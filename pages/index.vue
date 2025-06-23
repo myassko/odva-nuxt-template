@@ -18,12 +18,12 @@ import Footer from '@/components/footer/footer';
 				<Slider />
 				<div class="banners-container">
 					<Banner
-						text="Бесплатно доставим ваш заказ при покупке от 2000 ₽"
+						:text-html="`<span class='highlight-orange'>Бесплатно</span> доставим ваш заказ при покупке от 2000 ₽`"
 						bg-color="rgba(109, 55, 143, 1)"
 						img="/images/banner1.png"
 					/>
 					<Banner
-						text="Скидка при регистрации до"
+						:text-html="`Скидка при регистрации до <span class='highlight-green'>15%</span>`"
 						bg-color="rgba(255, 216, 239, 1)"
 						img="/images/banner2.png"
 					/>
@@ -69,5 +69,51 @@ import Footer from '@/components/footer/footer';
 	display: flex;
 	max-width: 1150px;
 	padding:0px;
+}
+.highlight-orange {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  padding: 2px 10px;
+  z-index: 1;
+}
+
+.highlight-orange::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/Vector 161.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Зелёная подложка для "15%" */
+.highlight-green {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 2px 10px;
+  z-index: 1;
+  color: #333;
+}
+
+.highlight-green::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/Vector 162.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
 </style>

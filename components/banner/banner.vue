@@ -1,5 +1,5 @@
 <script setup>
-defineProps(['text', 'bg-color', 'img']);
+defineProps(['textHtml', 'bgColor', 'img']);
 </script>
 
 <template>
@@ -8,9 +8,10 @@ defineProps(['text', 'bg-color', 'img']);
 			class="banner_container__body"
 			:style="{ backgroundColor: bgColor }"
 		>
-			<div class="banner__text">
-				{{ text }}
-			</div>
+			<div
+				class="banner__text"
+				v-html="textHtml"
+			/>
 			<img
 				:src="img"
 				alt=""
@@ -20,25 +21,26 @@ defineProps(['text', 'bg-color', 'img']);
 </template>
 
 <style scoped>
-    .banner_container{
-        /* display: inline-block; */
-        max-width: 360px;
-        margin-top: 30px;
-    }
-    .banner_container__body{
-        align-items: center;
-        display: flex;
-        border-radius: 5px;
-        padding: 20px 25px;
-    }
-    .banner__text::after{
-        display: block;
-        text-align: center;
-        content:"15%";
-        width: 60px;
-        background-image: url("public/images/Vector 162.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-origin: center center;
-    }
+.banner_container {
+  max-width: 360px;
+  margin-top: 30px;
+}
+
+.banner_container__body {
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  padding: 20px 25px;
+  gap: 10px;
+}
+
+.banner__text:first-child{
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+  position: relative;
+}
+.banner__text:not(:first-child){
+    color:rgba(28, 41, 77, 0.8);
+}
 </style>

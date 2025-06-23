@@ -20,7 +20,7 @@ defineProps(['product_title']);
 				genre="Корпоративное право"
 				description="Инвестирование: способы, риски, субъекты : монография"
 				publishing_house="Майфат А.В."
-				price="4 450 ₽"
+				:price="{ name: '4 450 ₽', color: 'rgba(28, 41, 77, 1)' }"
 				rating="4.9"
 				recommendations="89% рекомендуют"
 			/>
@@ -30,7 +30,7 @@ defineProps(['product_title']);
 				genre="Договорное право"
 				description="Договор коммерческой концессии (франчайзинг). Граж..."
 				publishing_house="Багдасарян А.Ф."
-				price="372 ₽"
+				:price="{ name: '372 ₽', color: 'rgba(28, 41, 77, 1)' }"
 				rating="4.9"
 				recommendations="89% рекомендуют"
 			/>
@@ -39,9 +39,11 @@ defineProps(['product_title']);
 				genre="Конкурентное право"
 				description="Договор коммерческой концессии (франчайзинг). Граж..."
 				publishing_house="Башлаков-Николаев И.В."
-				price="984 ₽"
+				:price="{ name: '984 ₽', color: 'rgba(253, 58, 58, 1)' }"
 				rating="4.9"
 				recommendations="89% рекомендуют"
+				old_price="1 284 ₽"
+				benefit="300 ₽"
 			/>
 			<ProductCard
 				:bestseller="{ title: 'Бестселлер', textColor: 'rgba(172, 142, 227, 1)', bgColor: 'rgba(238, 233, 247, 1)' }"
@@ -50,7 +52,7 @@ defineProps(['product_title']);
 				genre="Корпоративное право"
 				description="Инвестирование: способы, риски, субъекты : монография"
 				publishing_house="Майфат А.В."
-				price="4 450 ₽"
+				:price="{ name: '450 ₽', color: 'rgba(28, 41, 77, 1)' }"
 				rating="4.9"
 				recommendations="89% рекомендуют"
 			/>

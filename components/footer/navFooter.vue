@@ -176,10 +176,10 @@
         display: flex;
         gap: 100px;
         margin: auto;
-        max-width: 1150px;
-        padding-top: 45px;
         padding-top: 45px;
         padding-bottom: 45px;
+		margin-left: 113px;
+		margin-right: 113px;
         border-bottom: 1px solid rgba(40, 47, 54, 0.15);
     }
     .footer-nav-ul{

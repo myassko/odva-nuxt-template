@@ -1,5 +1,5 @@
 <script setup>
-defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'publishing_house', 'price', 'rating', 'recommendations']);
+defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'publishing_house', 'price', 'rating', 'recommendations', 'benefit', 'old_price']);
 </script>
 
 <template>
@@ -37,8 +37,27 @@ defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'pub
 		<p class="product-card__publishing_house">
 			{{ publishing_house }}
 		</p>
-		<span class="product-card__price">{{ price }}</span>
-		<span v-if="oldPrice">{{ oldPrice }}</span>
+		<div />
+		<div class="product-card__price">
+			<p
+				:style="{ color: price.color }"
+				class="product-card__new-price"
+			>
+				{{ price.name }}
+			</p>
+			<p
+				v-if="old_price"
+				class="product-card__old-price"
+			>
+				{{ old_price }}
+			</p>
+			<p
+				v-if="benefit"
+				class="product-card__benefit"
+			>
+				Выгода {{ benefit }}
+			</p>
+		</div>
 		<div class="product-card__rating-recommendations">
 			<div class="product-card__rating">
 				<svg
@@ -130,6 +149,19 @@ defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'pub
         gap: 15px;
 
     }
+	.product-card__benefit{
+		font-family: Roboto;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 100%;
+		letter-spacing: 0%;
+		color: rgba(13, 185, 140, 1);
+	}
+	.product-card__price{
+		display: flex;
+		gap: 7px;
+		align-items: center;
+	}
     .product-card__promotion{
         color: rgb(255, 79, 82);
         border-radius: 5px;
@@ -200,12 +232,14 @@ defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'pub
     }
     .product-card{
         padding: 22px 0px;
+		padding-left: 20px;
         position: relative;
-        border-right: 2px solid rgba(28, 41, 77, 0.15);
     }
+	.product-card:not(:first-child){
+		border-left: 2px solid rgba(28, 41, 77, 0.15);
+	}
     .product-card__img_book{
         margin: auto;
-
     }
     .product-card__description{
         margin-bottom: 8px;
@@ -235,7 +269,7 @@ defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'pub
         border: 1px solid rgb(238, 238, 238);
         border-radius: 5px;
     }
-    .product-card__price{
+    .product-card__new-price{
         font-weight: 700;
     }
     .product-card__card-fav{
@@ -264,5 +298,24 @@ defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'pub
 		line-height: 15px;
 		letter-spacing: 0px;
 		color: rgb(28, 41, 77);
+	}
+	.product-card__old-price{
+		position: relative;
+		color: rgba(28, 41, 77, 0.5);
+		text-decoration: none;
+		font-family: Roboto;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 15px;
+		letter-spacing: 0px;
+		align-items: center;
+		display: flex;
+	}
+	.product-card__old-price::before{
+		content: "";
+		border-bottom: 1px solid red;
+		position: absolute;
+		width: 100%;
+		transform: rotate(-4deg);
 	}
 </style>
