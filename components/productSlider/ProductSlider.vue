@@ -72,8 +72,9 @@ defineProps(['product_title']);
 
 <style scoped>
     .product-slider{
-        max-width: 1150px;
         margin: auto;
+		margin-left: 113px;
+		margin-right: 113px;
     }
     .product-slider__content{
         display: flex;
@@ -91,7 +92,6 @@ defineProps(['product_title']);
 		line-height: 25px;
 		letter-spacing: 0px;
 		color:rgba(28, 41, 77, 1);
-
     }
     .product-slider__bottom{
         margin: 10px 0px;

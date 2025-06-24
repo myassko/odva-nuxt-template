@@ -31,9 +31,10 @@ import CardFeature from '@/components/featureSite/CardFeature.vue';
 	.card-feature-cont{
 		display: flex;
 		gap: 30px;
-		max-width: 1150px;
 		margin: auto;
 		margin-top:42px;
 		margin-bottom: 42px;
+		margin-left: 113px;
+		margin-right: 113px;
 	}
 </style>

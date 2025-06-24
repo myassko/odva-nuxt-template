@@ -16,7 +16,6 @@ import InputEmail from '@/components/subscription/InputEmail';
 
 <style scoped>
     .subscription{
-        max-width: 1150px;
         margin: auto;
         margin-bottom:30px;
         display: flex;
@@ -26,6 +25,8 @@ import InputEmail from '@/components/subscription/InputEmail';
         color: white;
         border-radius: 5px;
         align-items: center;
+        margin-right: 113px;
+        margin-left: 113px;
     }
     .subscription__button{
         padding: 10px 25px;

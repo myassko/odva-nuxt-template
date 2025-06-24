@@ -235,6 +235,9 @@ defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'pub
 		padding-left: 20px;
         position: relative;
     }
+	.product-card:last-child{
+		padding-right: 20px;
+	}
 	.product-card:not(:first-child){
 		border-left: 2px solid rgba(28, 41, 77, 0.15);
 	}

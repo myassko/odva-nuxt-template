@@ -32,7 +32,7 @@ defineProps(['img_news', 'date_news', 'article_title', 'news_description']);
         /* padding-right: 34px; */
     }
     .news-card:not(:first-child){
-        padding-left: 17px;
+        padding-left: 34px;
         border-left: 1px solid rgba(28, 41, 77, 0.15);
         /* padding-right: 34px; */
     }

@@ -71,12 +71,23 @@ import Catalog from './catalog';
     }
     .header__middle
     {
-        max-width: 1150px;
         margin: auto;
         display: flex;
         align-items: center;
         gap: 30px;
         justify-content: space-between;
         margin-top: 20px;
+		margin-left: 113px;
+		margin-right: 113px;
     }
+	@media (max-width: 1500px) {
+		.header{
+			margin-left: 63px;
+			margin-right: 63px;
+		}
+		.header__middle{
+			margin-left: 63px;
+			margin-right: 63px;
+		}
+	}
 </style>

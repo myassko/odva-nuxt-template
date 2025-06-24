@@ -39,7 +39,6 @@ defineProps(['product_title']);
 <style scoped>
 .product-slider__title{
     font-family: 'Roboto';
-    max-width: 1150px;
     margin: auto;
     margin-bottom: 17px;
     padding-left: 20px;
@@ -49,15 +48,18 @@ defineProps(['product_title']);
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0px;
+	margin-left: 113px;
+	margin-right: 113px;
 
 }
 .new{
-    max-width: 1150px;
     display: flex;
     gap: 70px;
     margin: auto;
     border-top: 1px solid rgba(28, 41, 77, 0.15);
 	padding-bottom: 25px;
 	margin-bottom: 30px;
+	margin-left: 113px;
+	margin-right: 113px;
 }
 </style>

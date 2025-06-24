@@ -67,8 +67,9 @@ import Footer from '@/components/footer/footer';
 .container
 {
 	display: flex;
-	max-width: 1150px;
 	padding:0px;
+	margin-left: 113px;
+	margin-right: 113px;
 }
 .highlight-orange {
   position: relative;
@@ -115,5 +116,10 @@ import Footer from '@/components/footer/footer';
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
+}
+@media (max-width: 1500px){
+	.main-block{
+		margin-left: 13px;
+	}
 }
 </style>

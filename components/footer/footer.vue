@@ -61,7 +61,6 @@ import InfoWeb from '@/components/footer/infoWebSait';
         display: flex;
         margin: auto;
         padding: 25px 0px;
-        max-width: 1150px;
         gap: 298px;
         margin-left: 113px;
         margin-right: 113px;

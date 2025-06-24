@@ -74,10 +74,11 @@
     .header__catalog
     {
         display: flex;
-        max-width: 1150px;
         margin: auto;
         margin-top: 20px;
         gap:25px;
+		margin-left: 113px;
+		margin-right: 113px;
     }
     .header__catalog-menu
     {
@@ -98,4 +99,10 @@
     .color-sale{
         color:rgba(255, 40, 61, 1);
     }
+	@media (max-width: 1500px) {
+		.header__catalog{
+			margin-left: 63px;
+			margin-right: 63px;
+		}
+	}
 </style>

@@ -137,12 +137,12 @@
     .header__nav
     {
         display: flex;
-        justify-content: space-between;
-        max-width: 1150px;
+		justify-content: space-between;
         margin: auto;
         margin-top: 15px;
         margin-bottom:15px;
-
+		margin-left: 113px;
+		margin-right: 113px;
     }
     .header__nav-bottom
     {
@@ -202,4 +202,10 @@
 		text-align: center;
 		color: rgba(28, 41, 77, 0.8);
 	}
-</style>
+		@media (max-width: 1500px) {
+		.header__nav{
+			margin-left: 63px;
+			margin-right: 63px;
+		}
+		}
+	</style>
