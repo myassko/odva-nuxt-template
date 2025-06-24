@@ -202,10 +202,9 @@
 		text-align: center;
 		color: rgba(28, 41, 77, 0.8);
 	}
-		@media (max-width: 1500px) {
-		.header__nav{
-			margin-left: 63px;
-			margin-right: 63px;
-		}
+		@media (max-width: 380px) {
+			.header__nav-bottom{
+				display: none;
+			}
 		}
 	</style>

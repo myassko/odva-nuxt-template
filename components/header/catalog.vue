@@ -99,10 +99,9 @@
     .color-sale{
         color:rgba(255, 40, 61, 1);
     }
-	@media (max-width: 1500px) {
+	@media (max-width: 380px) {
 		.header__catalog{
-			margin-left: 63px;
-			margin-right: 63px;
+			display: none;
 		}
 	}
 </style>

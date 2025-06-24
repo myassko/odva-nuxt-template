@@ -15,4 +15,10 @@
         margin: auto;
         margin-top: 50px;
     }
+	@media (max-width: 380px){
+    .slider_img{
+		width: 355px;
+	}
+
+	}
 </style>

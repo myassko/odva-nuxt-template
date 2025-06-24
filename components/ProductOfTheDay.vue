@@ -163,4 +163,10 @@ defineProps(['countdown', 'img_book', 'genre', 'description', 'publishing_house'
 		letter-spacing: 0px;
 		color: rgb(28, 41, 77);
 	}
+	@media (max-width: 380px){
+    .product-of-the-day{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	}
 </style>

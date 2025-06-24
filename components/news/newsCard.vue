@@ -43,6 +43,7 @@ defineProps(['img_news', 'date_news', 'article_title', 'news_description']);
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 8px;
+        color: rgba(28, 41, 77, 1);
     }
     .news-card__date{
         font-family: Roboto;
@@ -61,5 +62,13 @@ defineProps(['img_news', 'date_news', 'article_title', 'news_description']);
         border: 1px solid rgba(28, 41, 77, 0.15);
         border-radius: 5px;
         margin-top: 12px;
+    }
+    .news-card__description{
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        color: rgba(40, 47, 54, 0.8);
     }
 </style>

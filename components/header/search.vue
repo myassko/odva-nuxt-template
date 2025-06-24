@@ -13,6 +13,11 @@
 				type="text"
 				placeholder="Автор, название, ISBN"
 			>
+			<input
+				class="header__search-input-adaptiv"
+				type="text"
+				placeholder="Что ищем?"
+			>
 			<button class="header__search-button">
 				<svg
 					width="20"
@@ -28,6 +33,23 @@
 						fill="white"
 					/></svg>
 				Искать
+			</button>
+			<button class="header__search-button-adaptiv">
+				<svg
+					width="18"
+					height="18"
+					viewBox="0 0 18 18"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M0.66666 6.91699C0.66666 10.3688 3.46488 13.167 6.91666 13.167C8.35969 13.167 9.6885 12.6779 10.7464 11.8566C10.7862 11.9409 10.841 12.0199 10.9107 12.0896L15.9107 17.0896C16.2362 17.415 16.7638 17.415 17.0893 17.0896C17.4147 16.7641 17.4147 16.2365 17.0893 15.9111L12.0893 10.9111C12.0195 10.8414 11.9405 10.7866 11.8562 10.7467C12.6776 9.68883 13.1667 8.36002 13.1667 6.91699C13.1667 3.46521 10.3684 0.666992 6.91666 0.666992C3.46488 0.666992 0.66666 3.46521 0.66666 6.91699ZM2.33333 6.91699C2.33333 4.38569 4.38536 2.33366 6.91666 2.33366C9.44797 2.33366 11.5 4.38569 11.5 6.91699C11.5 9.4483 9.44797 11.5003 6.91666 11.5003C4.38536 11.5003 2.33333 9.4483 2.33333 6.91699Z"
+						fill="#1C294D"
+						fill-opacity="0.5"
+					/>
+				</svg>
 			</button>
 		</form>
 	</div>
@@ -51,6 +73,9 @@
     border-bottom-left-radius: 5px;
     border-right: none;
 }
+.header__search-input-adaptiv{
+	display: none;
+}
 .header__search-button{
     // font-family: Roboto;
     // font-weight: 500;
@@ -58,7 +83,6 @@
     line-height: 20px;
     letter-spacing: 0px;
     text-align: right;
-
     padding: 10px 25px;
     border-top-right-radius:5px;
     border-bottom-right-radius:5px;
@@ -67,4 +91,33 @@
     color:white;
     background:rgba(255, 122, 0, 1);
 }
+.header__search-button-adaptiv{
+	display: none;
+}
+// ..............................................................АДАПТИВ.............................................................
+	@media (max-width: 380px) {
+		.header__search-input-adaptiv{
+			display: inline;
+			padding: 7px 22px 7px 15px;
+			border: 1px solid rgb(223, 224, 225);
+			border-radius: 5px;
+			max-width: 195px;
+		}
+		.header__search-input{
+			display: none;
+		}
+		.header__search-button-adaptiv{
+			display: inline;
+			padding-right: 10px;
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+		}
+		.header__search-form{
+			position: relative;
+		}
+		.header__search-button{
+			display: none;
+		}
+	}
 </style>

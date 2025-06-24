@@ -16,6 +16,16 @@ import Footer from '@/components/footer/footer';
 		<div class="container">
 			<div class="main-block">
 				<Slider />
+				<div class="product-of-day-adaptiv">
+					<ProductOfTheDay
+						genre="Корпоративное право"
+						countdown="08:56:31"
+						img_book="/images/bookday.png"
+						description="Инвестирование: способы, риски, субъекты : монография"
+						publishing_house="Майфат А.В."
+						price="4 450 ₽"
+					/>
+				</div>
 				<div class="banners-container">
 					<Banner
 						:text-html="`<span class='highlight-orange'>Бесплатно</span> доставим ваш заказ при покупке от 2000 ₽`"
@@ -117,9 +127,23 @@ import Footer from '@/components/footer/footer';
   background-position: center;
   z-index: -1;
 }
-@media (max-width: 1500px){
-	.main-block{
-		margin-left: 13px;
+.product-of-day-adaptiv{
+	display: none;
+}
+@media (max-width: 380px){
+	.container{
+		display: inline;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.product-of-day{
+		display: none;
+	}
+	.product-of-day-adaptiv{
+		display: inline;
+	}
+	.banners-container{
+		display: inline;
 	}
 }
 </style>
