@@ -106,4 +106,6 @@ defineProps(['product_title']);
 	margin-right: 113px;
 	margin-left: 113px;
 }
+@media (max-width: 380px) {
+	}
 </style>

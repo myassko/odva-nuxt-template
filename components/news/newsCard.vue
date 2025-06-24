@@ -71,4 +71,9 @@ defineProps(['img_news', 'date_news', 'article_title', 'news_description']);
         letter-spacing: 0px;
         color: rgba(40, 47, 54, 0.8);
     }
+    @media (max-width: 380px) {
+		.news-card:not(:first-child){
+            display: none;
+        }
+	}
 </style>

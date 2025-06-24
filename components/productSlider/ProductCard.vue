@@ -321,4 +321,9 @@ defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'pub
 		width: 100%;
 		transform: rotate(-4deg);
 	}
+	@media (max-width: 380px) {
+		.product-card:not(:first-child):not(:last-child){
+			display: none;
+		}
+	}
 </style>

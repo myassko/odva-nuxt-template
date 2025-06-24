@@ -42,4 +42,12 @@ defineProps(['icon_feature', 'title_feature', 'content_feature']);
 		font-size: 16px;
 		line-height: 25px;
 	}
+	@media (max-width: 380px) {
+	.card-feature{
+		padding: 50px 15px;
+	}
+	.card-feature__content_feature{
+		font-size: 15px;
+	}
+}
  </style>

@@ -9,11 +9,13 @@ import CardFeature from '@/components/featureSite/CardFeature.vue';
 			title_feature="Быстрая доставка"
 			content_feature="Доставим бесплатно от 2000 ₽ по всей России"
 		/>
-		<CardFeature
-			icon_feature="/images/Frame 3.svg"
-			title_feature="Безопасная оплата"
-			content_feature="Плати безопасно и легко онлайн на нашем сайте."
-		/>
+		<div class="card-feature-desktop">
+			<CardFeature
+				icon_feature="/images/Frame 3.svg"
+				title_feature="Безопасная оплата"
+				content_feature="Плати безопасно и легко онлайн на нашем сайте."
+			/>
+		</div>
 		<CardFeature
 			icon_feature="/images/Frame 4.svg"
 			title_feature="Бонусная программа"
@@ -24,6 +26,14 @@ import CardFeature from '@/components/featureSite/CardFeature.vue';
 			title_feature="Большой выбор"
 			content_feature="Ежегодно выходит в свет более 100 книг"
 		/>
+
+		<div class="card-feature-adaptiv">
+			<CardFeature
+				icon_feature="/images/Frame 3.svg"
+				title_feature="Безопасная оплата"
+				content_feature="Плати безопасно и легко онлайн на нашем сайте."
+			/>
+		</div>
 	</div>
 </template>
 
@@ -36,5 +46,21 @@ import CardFeature from '@/components/featureSite/CardFeature.vue';
 		margin-bottom: 42px;
 		margin-left: 113px;
 		margin-right: 113px;
+	}
+	.card-feature-adaptiv{
+		direction: none;
+	}
+	@media (max-width: 380px) {
+		.card-feature-cont{
+			display: inline;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		.card-feature-desktop{
+			display: none;
+		}
+		.card-feature-adaptiv{
+			display: inline;
+		}
 	}
 </style>

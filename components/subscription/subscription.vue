@@ -42,4 +42,27 @@ import InputEmail from '@/components/subscription/InputEmail';
         letter-spacing: 0%;
 
     }
+    @media (max-width: 380px) {
+        .subscription{
+            display: flex;
+            flex-direction: column;
+            margin-right: 0px;
+            margin-left: 0px;
+            padding: 20px 10px;
+            max-width: 355px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .subscription__button{
+            width: 100%;
+            padding: 10px 0px;
+        }
+        .subscription__text{
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0%;
+        }
+    }
 </style>
