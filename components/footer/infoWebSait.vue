@@ -48,4 +48,14 @@
 		text-align: center;
 		color: rgba(28, 41, 77, 0.8);
 	}
+	@media (max-width: 380px) {
+		.info-web{
+			flex-direction: column;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		.info-web__data{
+			flex-direction: column;
+		}
+	}
 </style>

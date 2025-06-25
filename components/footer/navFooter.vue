@@ -1,9 +1,28 @@
 <template>
 	<div class="footer-nav">
 		<div class="footer-nav-content">
-			<p class="">
-				Покупателям
-			</p>
+			<div class="footer-nav-container">
+				<p class="">
+					Покупателям
+				</p>
+				<div class="footer-nav-content-adaptiv">
+					<svg
+						width="12"
+						height="8"
+						viewBox="0 0 12 8"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M0.412046 0.91107C0.0866095 1.23651 0.0866094 1.76414 0.412046 2.08958L5.41205 7.08958C5.73748 7.41502 6.26512 7.41502 6.59056 7.08958L11.5906 2.08958C11.916 1.76414 11.916 1.23651 11.5906 0.91107C11.2651 0.585633 10.7375 0.585633 10.412 0.91107L6.0013 5.32182L1.59056 0.91107C1.26512 0.585633 0.737483 0.585633 0.412046 0.91107Z"
+							fill="#2A3D48"
+							fill-opacity="0.5"
+						/>
+					</svg>
+				</div>
+			</div>
 			<ul class="footer-nav-ul">
 				<li class="footer-nav-li">
 					<a
@@ -26,9 +45,28 @@
 			</ul>
 		</div>
 		<div class="footer-nav-content">
-			<p class="">
-				Издательство
-			</p>
+			<div class="footer-nav-container">
+				<p class="">
+					Издательство
+				</p>
+				<div class="footer-nav-content-adaptiv">
+					<svg
+						width="12"
+						height="8"
+						viewBox="0 0 12 8"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M0.412046 0.91107C0.0866095 1.23651 0.0866094 1.76414 0.412046 2.08958L5.41205 7.08958C5.73748 7.41502 6.26512 7.41502 6.59056 7.08958L11.5906 2.08958C11.916 1.76414 11.916 1.23651 11.5906 0.91107C11.2651 0.585633 10.7375 0.585633 10.412 0.91107L6.0013 5.32182L1.59056 0.91107C1.26512 0.585633 0.737483 0.585633 0.412046 0.91107Z"
+							fill="#2A3D48"
+							fill-opacity="0.5"
+						/>
+					</svg>
+				</div>
+			</div>
 			<ul class="footer-nav-ul">
 				<li class="footer-nav-li">
 					<a
@@ -57,9 +95,28 @@
 			</ul>
 		</div>
 		<div class="footer-nav-content">
-			<p class="">
-				Книги
-			</p>
+			<div class="footer-nav-container">
+				<p class="">
+					Книги
+				</p>
+				<div class="footer-nav-content-adaptiv">
+					<svg
+						width="12"
+						height="8"
+						viewBox="0 0 12 8"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M0.412046 0.91107C0.0866095 1.23651 0.0866094 1.76414 0.412046 2.08958L5.41205 7.08958C5.73748 7.41502 6.26512 7.41502 6.59056 7.08958L11.5906 2.08958C11.916 1.76414 11.916 1.23651 11.5906 0.91107C11.2651 0.585633 10.7375 0.585633 10.412 0.91107L6.0013 5.32182L1.59056 0.91107C1.26512 0.585633 0.737483 0.585633 0.412046 0.91107Z"
+							fill="#2A3D48"
+							fill-opacity="0.5"
+						/>
+					</svg>
+				</div>
+			</div>
 			<ul class="footer-nav-ul">
 				<li class="footer-nav-li">
 					<a
@@ -88,9 +145,28 @@
 			</ul>
 		</div>
 		<div class="footer-nav-content">
-			<p class="">
-				Прайс-лист
-			</p>
+			<div class="footer-nav-container">
+				<p class="">
+					Прайс-лист
+				</p>
+				<div class="footer-nav-content-adaptiv">
+					<svg
+						width="12"
+						height="8"
+						viewBox="0 0 12 8"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M0.412046 0.91107C0.0866095 1.23651 0.0866094 1.76414 0.412046 2.08958L5.41205 7.08958C5.73748 7.41502 6.26512 7.41502 6.59056 7.08958L11.5906 2.08958C11.916 1.76414 11.916 1.23651 11.5906 0.91107C11.2651 0.585633 10.7375 0.585633 10.412 0.91107L6.0013 5.32182L1.59056 0.91107C1.26512 0.585633 0.737483 0.585633 0.412046 0.91107Z"
+							fill="#2A3D48"
+							fill-opacity="0.5"
+						/>
+					</svg>
+				</div>
+			</div>
 			<a
 				class="footer-nav__price-link"
 				href=""
@@ -214,4 +290,36 @@
         color: rgba(40, 47, 54, 0.8);
         align-items: center;
     }
+	.footer-nav-content-adaptiv{
+		display: none;
+	}
+	@media (max-width: 380px) {
+		.footer-nav{
+			flex-direction: column;
+			gap: 0px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.footer-nav-ul{
+			display: none;
+		}
+		.footer-nav__price-link{
+			display: none;
+		}
+		.footer-nav-content{
+			padding: 20px;
+			border-bottom: 1px solid rgba(42, 61, 72, 0.15);
+		}
+		.footer-nav-content:last-child{
+			display: none;
+		}
+		.footer-nav-content-adaptiv{
+			display: flex;
+		}
+		.footer-nav-container{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
 </style>

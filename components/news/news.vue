@@ -107,5 +107,9 @@ defineProps(['product_title']);
 	margin-left: 113px;
 }
 @media (max-width: 380px) {
+	.product-slider__h2{
+	margin-right: 0px;
+	margin-left: 0px;
+	}
 	}
 </style>

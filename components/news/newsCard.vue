@@ -75,5 +75,8 @@ defineProps(['img_news', 'date_news', 'article_title', 'news_description']);
 		.news-card:not(:first-child){
             display: none;
         }
+        .news-card__read-button{
+            width: 100%;
+        }
 	}
 </style>

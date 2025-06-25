@@ -28,7 +28,7 @@ import Footer from '@/components/footer/footer';
 				</div>
 				<div class="banners-container">
 					<Banner
-						:text-html="`<span class='highlight-orange'>Бесплатно</span> доставим ваш заказ при покупке от 2000 ₽`"
+						:text-html="`<span class='highlight-orange' style='color: red;'>Бесплатно</span> доставим ваш заказ при покупке от 2000 ₽`"
 						bg-color="rgba(109, 55, 143, 1)"
 						img="/images/banner1.png"
 					/>

@@ -168,5 +168,14 @@ defineProps(['countdown', 'img_book', 'genre', 'description', 'publishing_house'
 		margin-left: 0px;
 		margin-right: 0px;
 	}
+	.product-of-the-day__img_book{
+		width: 133px;
+	}
+	.product-of-the-day__card{
+		width: 100%;
+	}
+	.product-of-the-day__card-text{
+		width: 100%;
+	}
 	}
 </style>

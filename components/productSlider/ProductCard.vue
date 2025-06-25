@@ -325,5 +325,42 @@ defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'pub
 		.product-card:not(:first-child):not(:last-child){
 			display: none;
 		}
+		.product-card:not(:first-child){
+		padding-left: 20px;
 	}
+		.product-card__rating-recommendations{
+		gap: 10px;
+		margin-top: 8px;
+		flex-direction: column;
+	}
+	.product-card__rating{
+		width: fit-content;
+	}
+	.product-card__card-text{
+		padding: 10px 13px;
+	}
+	.product-card__img_book{
+		width: 126px;
+	}
+	.product-card__description{
+		font-size: 13px;
+	}
+	.product-card__bestseller-color{
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+	.product-card__promotion{
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0px;
+		text-align: center;
+
+	}
+}
 </style>
