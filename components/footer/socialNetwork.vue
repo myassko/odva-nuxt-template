@@ -76,4 +76,9 @@
         border: 1px solid rgba(40, 47, 54, 0.15);
         border-radius: 50px;
     }
+		@media (max-width: 380px) {
+			.footer-social{
+				display: none;
+			}
+		}
 </style>

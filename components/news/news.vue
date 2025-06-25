@@ -71,6 +71,12 @@ defineProps(['product_title']);
 				news_description="18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч..."
 			/>
 		</div>
+		<div class="new__all-books">
+			<a
+				class="new__all-books-link"
+				href=""
+			>Показать все новости</a>
+		</div>
 	</div>
 </template>
 
@@ -106,10 +112,23 @@ defineProps(['product_title']);
 	margin-right: 113px;
 	margin-left: 113px;
 }
+.new__all-books{
+	display: none;
+}
 @media (max-width: 380px) {
+	.new{
+		border-bottom: 1px solid rgba(28, 41, 77, 0.15);
+	}
 	.product-slider__h2{
 	margin-right: 0px;
 	margin-left: 0px;
+	}
+	.new__all-books{
+	display: flex;
+	margin-bottom: 30px;
+	}
+	.new__all-books-link{
+		margin: auto;
 	}
 	}
 </style>

@@ -9,6 +9,11 @@
 				type=""
 				placeholder="Введите свой Email и получите скидку"
 			>
+			<input
+				class="footer__email-input-adaptiv"
+				type=""
+				placeholder="Подписаться на рассылку"
+			>
 		</form>
 		<button class="footer__email-tg-icon">
 			<svg
@@ -43,4 +48,34 @@
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
+	.footer__email-input-adaptiv{
+		display: none;
+	}
+	@media (max-width: 380px) {
+		.footer__email-tg-icon{
+			padding: 10px 12px;
+		}
+		.footer__email-input{
+			padding: 10px 176px 10px 15px;
+			padding-right: 0px;
+			width: 100%;
+		}
+		.footer__email-input-adaptiv{
+		display: inline;
+		padding: 10px 15px 10px 15px;
+        border: 1px solid rgb(223, 224, 225);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+		width: 100%;
+		font-family: Roboto;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0px;
+
+	}
+	.footer__email-input{
+		display: none;
+	}
+	}
 </style>
