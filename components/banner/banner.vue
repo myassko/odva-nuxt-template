@@ -40,9 +40,6 @@ defineProps(['textHtml', 'bgColor', 'img']);
   color: #fff;
   position: relative;
 }
-.banner__text:last-child{
-    color:rgba(28, 41, 77, 0.8);
-}
 @media (max-width: 380px) {
     .banner_container__body{
     margin: 0px 10px;

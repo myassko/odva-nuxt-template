@@ -72,6 +72,10 @@ defineProps(['img_news', 'date_news', 'article_title', 'news_description']);
         color: rgba(40, 47, 54, 0.8);
     }
     @media (max-width: 380px) {
+        .news-card{
+            padding-right: 10px;
+            padding-left: 10px;
+        }
 		.news-card:not(:first-child){
             display: none;
         }

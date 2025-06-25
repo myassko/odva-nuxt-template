@@ -326,7 +326,7 @@ defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'pub
 			display: none;
 		}
 		.product-card:not(:first-child){
-		padding-left: 20px;
+		padding-left: 10px;
 	}
 		.product-card__rating-recommendations{
 		gap: 10px;
@@ -360,7 +360,32 @@ defineProps(['bestseller', 'promotion', 'img_book', 'genre', 'description', 'pub
 		line-height: 15px;
 		letter-spacing: 0px;
 		text-align: center;
-
+	}
+	.product-card__cars-span{
+		white-space: nowrap;
+	}
+	.product-card{
+		padding-left: 10px;
+	}
+	.product-card__recommendations{
+		width: fit-content;
+		padding: 7px 10px;
+	}
+	.product-card__card-text{
+		padding: 1px 6px;
+	}
+	.product-card__favorites{
+		padding: 6px;
+	}
+	.product-card__description{
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		width: 124px;
+		word-break: break-all;
+		font-size: 14px;
 	}
 }
 </style>

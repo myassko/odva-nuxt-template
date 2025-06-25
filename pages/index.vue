@@ -28,12 +28,12 @@ import Footer from '@/components/footer/footer';
 				</div>
 				<div class="banners-container">
 					<Banner
-						:text-html="`<span class='highlight-orange' style='color: red;'>Бесплатно</span> доставим ваш заказ при покупке от 2000 ₽`"
+						:text-html="`<p class='dslldl' style='color: white;'><span class='highlight-orange' style='color: white;'>Бесплатно</span> доставим ваш заказ при покупке от 2000 ₽</p>`"
 						bg-color="rgba(109, 55, 143, 1)"
 						img="/images/banner1.png"
 					/>
 					<Banner
-						:text-html="`Скидка при регистрации до <span class='highlight-green'>15%</span>`"
+						:text-html="`<p class='dslldl' style='color: black;'>Скидка при регистрации до <span class='highlight-green'>15%</span></p>`"
 						bg-color="rgba(255, 216, 239, 1)"
 						img="/images/banner2.png"
 					/>
@@ -126,6 +126,13 @@ import Footer from '@/components/footer/footer';
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
+}
+.dslldl{
+	font-family: Gosha Sans;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0px;
 }
 .product-of-day-adaptiv{
 	display: none;

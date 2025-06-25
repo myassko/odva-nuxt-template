@@ -50,8 +50,9 @@ import InputEmail from '@/components/subscription/InputEmail';
             margin-left: 0px;
             padding: 20px 10px;
             max-width: 355px;
-            margin-right: 10px;
-            margin-left: 10px;
+            /* margin-right: 10px;
+            margin-left: 10px; */
+            margin: auto;
         }
         .subscription__button{
             width: 100%;

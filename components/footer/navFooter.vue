@@ -299,6 +299,8 @@
 			gap: 0px;
 			margin-left: 10px;
 			margin-right: 10px;
+			padding-bottom: 0px;
+			padding-top: 0px;
 		}
 		.footer-nav-ul{
 			display: none;

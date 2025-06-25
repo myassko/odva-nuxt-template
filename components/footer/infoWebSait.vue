@@ -10,6 +10,8 @@
 			<li class="info-web__address">
 				Политика конфиденциальности
 			</li>
+			<li><a href="" /></li>
+			<li><a href="" /></li>
 			<li class="info-web__address">
 				Договор оферты
 			</li>
@@ -53,9 +55,14 @@
 			flex-direction: column;
 			margin-left: 0px;
 			margin-right: 0px;
+			gap: 0px;
 		}
 		.info-web__data{
 			flex-direction: column;
+			order: -1;
+		}
+		.info-web__address:first-child{
+			order: 2;
 		}
 	}
 </style>
