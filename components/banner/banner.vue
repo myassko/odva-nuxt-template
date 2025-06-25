@@ -44,5 +44,9 @@ defineProps(['textHtml', 'bgColor', 'img']);
     .banner_container__body{
     margin: 0px 10px;
     }
+	.banner_container{
+		margin-top: 0px;
+		max-width: 100%;
+	}
 }
 </style>

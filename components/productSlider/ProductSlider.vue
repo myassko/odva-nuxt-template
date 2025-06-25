@@ -154,5 +154,8 @@ defineProps(['product_title']);
 		margin-left: 20px;
 		margin-right: 20px;
 	}
+	.product-slider__title{
+		padding-left:0px ;
+	}
 }
 </style>

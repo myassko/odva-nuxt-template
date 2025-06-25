@@ -84,7 +84,6 @@ import Footer from '@/components/footer/footer';
 .highlight-orange {
   position: relative;
   display: inline-block;
-  font-weight: bold;
   color: white;
   padding: 2px 10px;
   z-index: 1;
@@ -103,8 +102,6 @@ import Footer from '@/components/footer/footer';
   background-position: center;
   z-index: -1;
 }
-
-/* Зелёная подложка для "15%" */
 .highlight-green {
   position: relative;
   display: inline-block;
@@ -150,7 +147,11 @@ import Footer from '@/components/footer/footer';
 		display: inline;
 	}
 	.banners-container{
-		display: inline;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top:0px ;
+		margin-bottom: 10px;
 	}
 }
 </style>

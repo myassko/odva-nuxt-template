@@ -46,9 +46,10 @@ import CardFeature from '@/components/featureSite/CardFeature.vue';
 		margin-bottom: 42px;
 		margin-left: 113px;
 		margin-right: 113px;
+		align-items: center;
 	}
 	.card-feature-adaptiv{
-		direction: none;
+		display: none;
 	}
 	@media (max-width: 380px) {
 		.card-feature-cont{
