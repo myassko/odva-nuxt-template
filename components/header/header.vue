@@ -115,6 +115,7 @@ import Catalog from './catalog';
 			margin-right: 20px;
 			display: flex;
 			gap: 15px;
+			padding-bottom: 18px;
 		}
 		.header__burger{
 			display: inline;

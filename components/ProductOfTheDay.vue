@@ -167,6 +167,7 @@ defineProps(['countdown', 'img_book', 'genre', 'description', 'publishing_house'
     .product-of-the-day{
 		margin-left: 0px;
 		margin-right: 0px;
+		margin-top: 10px;
 	}
 	.product-of-the-day__img_book{
 		width: 133px;

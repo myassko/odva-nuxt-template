@@ -43,6 +43,7 @@ defineProps(['textHtml', 'bgColor', 'img']);
 @media (max-width: 380px) {
     .banner_container__body{
     margin: 0px 10px;
+	padding: 20px 15px;
     }
 	.banner_container{
 		margin-top: 0px;

@@ -143,7 +143,13 @@
 	@media (max-width: 380px){
     .slider_img{
 		width: 355px;
+		margin-top: 10px;
 	}
-
+	.slider_img__pagin{
+		right: 120px;
+	}
+	.slider_img__arrow{
+		display: none;
+	}
 	}
 </style>
