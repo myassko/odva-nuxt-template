@@ -1,10 +1,87 @@
+<script setup>
+import { onMounted } from 'vue';
+
+onMounted(() =>
+{
+	let offset = 0;
+	const slideWidth = 743;
+	const slideCount = 4;
+	const maxOffset = slideWidth * (slideCount - 1);
+
+	const sliderLine = document.querySelector('.slider-line');
+	const dots = document.querySelectorAll('.slider_img__pagin svg rect');
+
+	const updatePagination = () =>
+	{
+		const activeIndex = offset / slideWidth;
+		dots.forEach((dot, index) =>
+		{
+			dot.setAttribute('fill-opacity', index === activeIndex ? '1' : '0.5');
+		});
+	};
+
+	document.querySelector('.slider_img__arrow-right-button').addEventListener('click', function ()
+	{
+		offset += slideWidth;
+		if (offset > maxOffset)
+		{
+			offset = 0;
+		}
+		sliderLine.style.left = -offset + 'px';
+		updatePagination();
+	});
+
+	document.querySelector('.slider_img__arrow-left-button').addEventListener('click', function ()
+	{
+		offset -= slideWidth;
+		if (offset < 0)
+		{
+			offset = maxOffset;
+		}
+		sliderLine.style.left = -offset + 'px';
+		updatePagination();
+	});
+
+	// Обработка кликов по чёрточкам
+	dots.forEach((dot, index) =>
+	{
+		dot.parentNode.style.cursor = 'pointer';
+		dot.parentNode.addEventListener('click', () =>
+		{
+			offset = index * slideWidth;
+			sliderLine.style.left = -offset + 'px';
+			updatePagination();
+		});
+	});
+
+	updatePagination(); // Установить активную чёрточку при загрузке
+});
+</script>
+
 <template>
 	<div class="slider_img">
-		<img
-			class=""
-			src="/images/slaider.png"
-			alt=""
-		>
+		<div class="slider-line">
+			<img
+				class=""
+				src="/images/slaider.png"
+				alt=""
+			>
+			<img
+				class=""
+				src="/images/slaider.png"
+				alt=""
+			>
+			<img
+				class=""
+				src="/images/slaider.png"
+				alt=""
+			>
+			<img
+				class=""
+				src="/images/slaider.png"
+				alt=""
+			>
+		</div>
 		<div class="slider_img__arrow">
 			<button class="slider_img__arrow-left-button">
 				<svg
@@ -109,11 +186,21 @@
 <style scoped>
     .slider_img
     {
-		position: relative;;
-        max-width: 1150px;
+		border: 2px solid black;
+		position: relative;
+        /* max-width: 1150px; */
         margin: auto;
         margin-top: 50px;
+		overflow: hidden;
     }
+	.slider-line{
+		display: flex;
+		width: 750px;
+		height: 350px;
+		position: relative;
+		left: 0;
+		transition: all ease 1s;
+	}
 	.slider_img__pagin{
 		display: flex;
 		gap:5px;
@@ -150,6 +237,9 @@
 	}
 	.slider_img__arrow{
 		display: none;
+	}
+	.slider-line{
+
 	}
 	}
 </style>
